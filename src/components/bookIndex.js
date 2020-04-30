@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom';
 import DeleteAction from "./deleteAction";
- 
+
 export default class BookIndex extends Component {
     constructor(props) {
         super(props) 
@@ -12,7 +12,7 @@ export default class BookIndex extends Component {
     }
   
     componentDidMount() {
-      fetch('https://book-index-api-cb.herokuapp.com/books', {
+      fetch('https://christiebury-crud-book.herokuapp.com/books', {
         method: 'GET',
         headers: {
           'accepts': 'application/json',

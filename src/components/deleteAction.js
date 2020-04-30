@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function DeleteAction(props) {
     function handleClick(){
-        fetch(`https://book-index-api-cb.herokuapp.com/delete/${props.id}`,{
+        fetch(`https://christiebury-crud-book.herokuapp.com/delete/${props.id}`,{
             method: 'DELETE',
             headers: {
                 "Content-Type": "application/json"

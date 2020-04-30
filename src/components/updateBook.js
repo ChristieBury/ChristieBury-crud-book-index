@@ -27,7 +27,7 @@ export default class UpdateBook extends Component {
         let title = this.state.title;
         let author = this.state.author;
 
-        fetch(`https://book-index-api-cb.herokuapp.com/update_book/${id}`, {
+        fetch(`https://christiebury-crud-book.herokuapp.com/update_book/${id}`, {
             method:'PUT',
             headers:{
                 "Content-Type":"application/json"
