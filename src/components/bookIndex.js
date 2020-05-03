@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import DeleteAction from "./deleteAction";
 
 export default class BookIndex extends Component {
+  // _isMounted = false;
     constructor(props) {
         super(props) 
         this.state = {
@@ -22,7 +23,9 @@ export default class BookIndex extends Component {
       }).then(response => {
         return response.json()
       }).then(data => {
-          this.setState({books:data})
+        // if (this._isMounted) {
+          this.setState({books:data});
+        // }
    
       }).catch(e => {
         console.log('fetch error', e)
